@@ -1,60 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/topscoder/docker-templates/master/topscoder/laravel.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>Productivity: Tools:</Category>
-  <Name>topscoder-laravel</Name>
-  <Description>
-    [b]Description[/b][br]
-    Because Laravel.[br][br]
-    [b]Configuration[/b][br]
-    [b]/app[/b] Points to the root of the Laravel installation.[br][br]
-    [b]Documentation[/b][br]
-    https://laravel.io[br][br]
-  </Description>
-  <Overview>
-    Because Laravel.
-  </Overview>
-  <Support>https://forums.unraid.net/</Support>
-  <Registry>https://registry.hub.docker.com/r/bitnami/laravel</Registry>
-  <GitHub>https://github.com/bitnami/bitnami-docker-laravel</GitHub>
-  <Repository>bitnami/laravel:latest</Repository>
-  <Project>https://laravel.io</Project>
-  <BindTime>true</BindTime>
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>laravel</Name>
+  <Repository>laravel</Repository>
+  <Registry>http://hub.docker.com/bitnami/laravel</Registry>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8000</HostPort>
-        <ContainerPort>8000</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>25565-25575</HostPort>
-        <ContainerPort>25565-25575</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Environment>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/laravel</HostDir>
-      <ContainerDir>/app</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Banner></Banner>
-  <WebUI>https://[IP]:[PORT:8000]/</WebUI>
-  <Icon></Icon>
-  <DonateText>If you appreciate my work, then please consider drinking a beer :D</DonateText>
-  <DonateLink></DonateLink>
-  <DonateImg></DonateImg>
-  <ExtraParams></ExtraParams>
-</Containers>
+  <Support>https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository/</Support>
+  <Project>https://github.com/laravel/laravel</Project>
+  <Overview>Lorem ipsum dolor el samet. Et al.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/topscoder/docker-templates/master/templates/laravel.xml</TemplateURL>
+  <Icon>https://laravel.com/img/logomark.min.svg</Icon>
+  <Config Name="WebUI Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Theme" Target="ADMINER_DESIGN" Default="flat" Description="Container Variable: ADMINER_DESIGN" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
