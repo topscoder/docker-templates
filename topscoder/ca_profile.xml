@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maintainer>
-  <Icon></Icon>
+  <Icon>https://github.com/selfhosters.png</Icon>
   <Profile>
     Docker Images with open source software.
   </Profile>
-  <DonateLink></DonateLink>
-  <DonateText>If you appreciate my work, then please consider drinking a beer yourself :D</DonateText>
+  <WebPage>https://selfhosters.net/</WebPage>
 </Maintainer>
