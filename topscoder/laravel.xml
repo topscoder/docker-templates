@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/topscoder/docker-templates/master/topscoder/laravel.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>topscoder-laravel</Name>
+  <Description>
+    [b]Description[/b][br]
+    Because Laravel.[br][br]
+    [b]Configuration[/b][br]
+    [b]/app[/b] Points to the root of the Laravel installation.[br][br]
+    [b]Documentation[/b][br]
+    https://laravel.io[br][br]
+  </Description>
+  <Overview>
+    Because Laravel.
+  </Overview>
+  <Support>https://forums.unraid.net/</Support>
+  <Registry>https://registry.hub.docker.com/r/bitnami/laravel</Registry>
+  <GitHub>https://github.com/bitnami/bitnami-docker-laravel</GitHub>
+  <Repository>bitnami/laravel:latest</Repository>
+  <Project>https://laravel.io</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>25565-25575</HostPort>
+        <ContainerPort>25565-25575</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/laravel</HostDir>
+      <ContainerDir>/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner></Banner>
+  <WebUI>https://[IP]:[PORT:8000]/</WebUI>
+  <Icon></Icon>
+  <DonateText>If you appreciate my work, then please consider drinking a beer :D</DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
