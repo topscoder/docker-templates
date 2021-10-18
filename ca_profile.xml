@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon></Icon>
+  <Profile>
+    Docker Images with open source software.
+  </Profile>
+  <DonateLink></DonateLink>
+  <DonateText>If you appreciate my work, then please consider drinking a beer yourself :D</DonateText>
+</Maintainer>
